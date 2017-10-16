@@ -1,0 +1,55 @@
+.container{
+           width: 980px;
+          background: #ffffff;
+          margin: 0px auto;
+          box-shadow:1px 1px 10px 1px #d5d5d6;
+          .container-c{
+              padding:25px;
+              .cc-title{
+                  font-size:20px;
+                  text-align: left;
+                  color: #428bca;
+              }
+          }
+          .containerbox{
+              padding: 15px;
+              .sjl-line{
+                  margin-top: 12px;
+              }
+              .sjl_input{
+                  padding: 5px;
+                  height: 24px;
+                  background: #ffffff;
+                  border: 1px solid #dfdfdf;
+                  width:450px;
+                  font-size: 14px;
+                }
+            }
+         }
+
+ //标题
+    .titles{
+      font-size:14px;
+      text-indent:8px;
+      color:#428bca;
+      margin:20px 0 10px 0;
+      position:relative;
+      &:before{
+        content:"";
+        position:absolute;
+        left:0px;
+        top:3px;
+        width:4px;
+        height:15px;
+        background:#428bca;
+      }
+    }
+    .searchbox{
+      .sjl-submit{
+        width:81px;
+        height: 40px;
+        background:url(../images/searchbtn1.jpg) no-repeat center;
+        margin-left:5px;
+        cursor: pointer;
+      }
+    }//searchbox end

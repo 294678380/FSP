@@ -1,0 +1,22 @@
+{
+  "name": "dsj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "config-lite": "^1.5.0",
+    "ejs": "^2.5.5",
+    "express": "^4.15.2",
+    "express-session": "^1.14.2",
+    "supervisor": "^0.12.0"
+  }
+}

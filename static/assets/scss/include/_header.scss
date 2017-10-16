@@ -1,0 +1,39 @@
+//header
+    header{
+        height: 38px;
+        background: #428bca;
+        position:relative;
+        z-index:3;
+        width: 100%;
+        .heading{
+            width: 980px;
+            margin: 0 auto;
+            line-height: 38px;
+            .logo{
+                display: block;
+                float: left;
+                width: 217px;
+                height: 14px;
+            }
+            .header-right{
+                float: right;
+                width: 600px;
+                text-align: right;
+                color: #ffffff;
+                font-size: 12px;
+                a{
+                    display: inline-block;
+                    color: #ffffff;
+                    margin-left: 20px;
+                    &:hover{
+                        color: #afd4f4;
+                    }
+                }
+                .user{
+                    display: inline-block;
+                    color: #ffffff;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }//header end

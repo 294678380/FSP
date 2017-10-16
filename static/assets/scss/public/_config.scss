@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+@mixin transition($value){
+    transition:$value;
+    -webkit-transition:$value;
+    -moz-transition:$value;
+    -ms-transition:$value;
+    -o-transition:$value;
+};
+@mixin transform($value){
+    transform:$value;
+    -webkit-transform:$value;
+    -moz-transform:$value;
+    -ms-transform:$value;
+    -o-transform:$value;
+};
+@mixin filter($value){
+    -webkit-filter: $value;
+    -moz-filter: $value;
+    -o-filter: $value;
+    -ms-filter: $value;
+    filter: $value;
+};
+//从上而下的渐变
+@mixin gradient($form,$to){
+  background: -webkit-linear-gradient($form,$to); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient($form,$to); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient($form,$to); /* Firefox 3.6 - 15 */
+  background: linear-gradient($form,$to); /* 标准的语法 */
+  
+};

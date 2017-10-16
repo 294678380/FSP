@@ -1,0 +1,37 @@
+//创建流
+ create stream test(body text) 
+//查询
+select * from pg_class where relname='test2';
+//创建流信息表
+create table fsp_streams(
+	id SERIAL not null PRIMARY key,
+	relname varchar(40),
+	reltext text,
+	reset text,
+	edit_time varchar(40),
+	create_time varchar(40),
+	kafka text
+)
+//查询流信息
+select * from fsp_streams
+//删除流信息
+delete from fsp_streams where id=2
+//删除流
+drop stream test2
+//创建fsp_user表
+create table fsp_users(user_name varchar(32),pass_word varchar(40),_id SERIAL not null PRIMARY key,groups int,active int,create_time date)
+//插入数据
+insert into fsp_users(
+	user_name,
+	pass_word,
+	groups,
+	active,
+	create_time
+) values(
+	'admin',
+	'admin',
+	1,
+	1,
+	'2017-5-27'
+)
+select * from test2

@@ -1,0 +1,84 @@
+/*
+ *@see 页面默认样式.
+ *@aouth ztf
+ *@date 2016-11-16
+ * */
+@import "./config";
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, select, input,select, button, textarea, p, blockquote,th, td,article, aside, footer, header, hgroup, .nav, section,figure{ margin: 0; padding: 0; }
+html, body { background: #f0f2f3 url(../images/bg.png) no-repeat; background-size: cover; -webkit-text-size-adjust:none; font-family: "Microsoft YaHei",'微软雅黑',"MicrosoftJhengHei";}/*for chrome */
+html.notscroll,body.notscroll{ overflow: hidden; }
+img{ border:0; vertical-align:middle; max-width: 100%; }
+em{ font-style: normal; }
+ol,ul,li{ list-style:none outside none; }
+table{ width: 100%; border-collapse: collapse; border-spacing: 0; }
+input, button, textarea, select, optgroup, option{ font: 100% arial, helvetica, clean, sans-serif; vertical-align:middle; }
+select{ height:22px; line-height:22px; }
+select option{ padding:3px; }
+article, aside, footer, header, hgroup, .nav, section { display: block; }
+input[type=button] ,input[type=submit],button{ outline:none; border: none; } 
+input,button,a { outline:0 none !important; blr:expression(this.onFocus=this.blur()); } 
+a{ text-decoration: none; }
+button::-moz-focus-inner { border:none; }
+textarea{max-width: 100%;}
+h1{ font-size:2em; }h2{ font-size:1.5em; }h3{ font-size:1.17em; }h4{ font-size:1em; }h5{ font-size:.83em; }h6{ font-size:.67em; }
+.fl{ float: left; }
+.fr{ float: right; }
+.tl{ text-align: left; }
+.tc{ text-align: center; }
+.tr{ text-align: right; }
+.tove{ overflow: hidden; zoom: 1; }
+.textover{ white-space: nowrap; overflow: hidden; -ms-text-overflow: ellipsis; text-overflow: ellipsis; }/*禁止换行 省略号溢出*/
+.clearfix:after{ content:""; display:block; visibility:hidden; height:0; clear:both; }
+.clearfix{ zoom:1; }
+.backicon{font-family: "\5b8b\4f53";}
+.disabled{ position: relative;}
+.disabled:after{content: ""; cursor: pointer; position: absolute;left: 0px; top: 0px; height:100%; width: 100%; z-index: 10;  }
+.iconfont{font-family: iconfont;}
+/*过渡动画*/
+.transtionall1{ transition: all 1s; -webkit-transition: all 1s; -ms-transition: all 1s; -o-transition: all 1s; -moz-transition: all 1s; }
+.transtionall2{ transition: all 2s; -webkit-transition: all 2s; -ms-transition: all 2s; -o-transition: all 2s; -moz-transition: all 2s; }
+a:hover{ text-decoration: none; }
+.wrap{ width: 1200px; margin: 0 auto;}
+.none{display: none;}
+@font-face {font-family: "iconfont";
+  src: url('../fonts/iconfont.eot?t=1494983316951'); /* IE9*/
+  src: url('../fonts/iconfont.eot?t=1494983316951#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/iconfont.woff?t=1494983316951') format('woff'), /* chrome, firefox */
+  url('../fonts/iconfont.ttf?t=1494983316951') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../fonts/iconfont.svg?t=1494983316951#iconfont') format('svg'); /* iOS 4.1- */
+}
+body{
+    background: url("../images/mainbg.png") repeat;
+}
+.checkbox{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    font-size: 12px;
+    color: #666666;
+    position: relative;
+    input{
+        display: block;
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        opacity: 1;
+        z-index: 2;
+        opacity: 0;
+    }
+    &:after{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            z-index: 3;
+            background: url(../images/checkbox.png) no-repeat;
+            background-position: 0px 0px;
+        }
+        &.active:after{
+            background-position: -16px 0;
+        }
+}

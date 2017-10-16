@@ -1,0 +1,121 @@
+/**
+ * jsx --watch 输入 输出
+ * Fast Streaming Platform
+ * index
+ * */
+@import "./public/base";
+@import "./include/header";
+@import "./include/nav";
+@import "./include/container";
+.content{
+    //内容
+    
+          .sjl-detail{
+              margin-top:12px;
+              padding: 9px;
+              background: #ffffff;
+              border: 1px solid #dfdfdf;
+              position: relative;
+             .field-list{
+                padding:15px 30px;
+                .field{
+                  width:100%;
+                  overflow:hidden;
+                  ul li{
+                    width:32%;
+                    float: left;
+                    color:#666666;
+                    font-size:12px;
+                    text-align: center;
+                    height:30px;
+                    margin-top: 15px;
+                    position:relative;
+                    &:hover{
+                      .field-delete{
+                        opacity: 1;
+                      }
+                    }
+                    .field-delete{
+                      opacity: 0;
+                      @include transition(opacity 500ms);
+                      color:#cc0000;
+                       display: inline-block;
+                        margin-right: 8px;
+                        width:20px;
+                        height:20px;
+                        font-size: 12px;
+                        text-align: center;
+                        line-height: 20px;
+                        border-radius:50%;
+                        border:1px solid #cc0000;
+                        position:relative;
+                        top:2px;
+                        &:hover{
+                          background:#cc0000;
+                          color:#ffffff;
+                        }
+                    }
+                    .field-name{
+                      display: inline-block;
+                      width:120px;
+                      height:30px;
+                      background:#999999;
+                      color:#ffffff;
+                      font-size:14px;
+                      text-align: center;
+                      line-height:30px;
+                    }
+                    input{
+                      width:92%;
+                      border: 1px solid #dfdfdf;
+                      height:28px;
+                      padding-left:5px;
+                    }
+                    &.add-field{
+                      color: #639fd3;
+                      font-size:16px;
+                      text-align: left;
+                      margin-top:30px;
+                      cursor: pointer;
+                      .icon{
+                        display: inline-block;
+                        margin-right: 4px;
+                        width:20px;
+                        height:20px;
+                        font-size: 25px;
+                        text-align: center;
+                        line-height: 18px;
+                        border-radius:50%;
+                        border:1px solid #639fd3;
+                        position:relative;
+                        top:2px;
+                      }
+                      &:hover{
+                        .icon{
+                          background:#639fd3;
+                          color:#ffffff;
+                        }
+                      }
+                    }//add-field
+                    &.add-submit{
+                      margin-top:60px;
+                      overflow: hidden;
+                        a{
+                          background:#ff9000;
+                          color:#ffffff;
+                          font-size:14px;
+                          text-align: center;
+                          float: right;
+                          width:120px;
+                          height:30px;
+                          line-height: 30px;
+
+                        }
+                    }
+                  }//ul li
+                }
+             }//.field-list
+          }//,sjl-detail
+   
+      
+}

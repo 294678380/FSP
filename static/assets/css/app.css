@@ -1,0 +1,277 @@
+.aui_state_lock {
+	transition: all 500ms;
+	-moz-transition: all 500ms;
+	-webkit-transition: all 500ms;
+	-ms-transition: all 500ms;
+	-o-transition: all 500ms
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.aui_outer {
+	border-radius: 10px;
+	position: relative;
+	background: #ffffff;
+	border-radius: 0;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+	-o-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+	-ms-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5)
+}
+
+.aui_titleBar {
+	background: #ffffff;
+	padding: 15px;
+	min-width: 230px;
+	border-bottom: 1px solid #dfdfdf;
+	overflow: hidden
+}
+
+.aui_titleBar .aui_title {
+	float: left;
+	font-size: 14px;
+	color: #333333;
+	font-weight: normal
+}
+
+.aui_footer {
+	border-top: 1px solid #dfdfdf
+}
+
+.aui_state_focus {
+	border: 2px solid rgba(0, 0, 0, 0.2);
+	border-radius: 3px;
+}
+
+.aui_titleBar .aui_close {
+	float: right;
+	color: #b5b5b5;
+	font-size: 18px;
+	line-height: 18px;
+	color: #999999
+}
+
+.aui_titleBar .aui_close:hover {
+	color: #666666;
+	text-decoration: none
+}
+
+.aui_buttons {
+	padding: 20px 0;
+	overflow: hidden;
+	zoom: 1;
+	position: relative;
+	height: 15px
+}
+
+.aui_buttons button {
+	display: block;
+	border-collapse: collapse;
+	float: left;
+	margin-left: 30%;
+	box-shadow: none;
+	cursor: pointer;
+	width: 19%;
+	font-size: 12px;
+	border: 0;
+	height: 29px;
+	color: #999999;
+	border: 1px solid #999999;
+	background-color: #ffffff
+}
+
+.aui_buttons button.aui_state_highlight {
+	background-color: #FF6537;
+	color: #ffffff;
+	float: right;
+	margin-left: 0;
+	margin-right: 30%;
+	border: none
+}
+
+button.aui_state_highlight:focus {
+	border: none;
+	box-shadow: none;
+	filter: none
+}
+
+.aui_outer2,
+.aui_outer1,
+.aui_outer3 {
+	width: 250px !important;
+	border: 0;
+	text-align: center;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+	-o-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+	-ms-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5)
+}
+
+.aui_outer2 .aui_titleBar,
+.aui_outer1 .aui_titleBar,
+.aui_outer3 .aui_titleBar {
+	font-weight: bold;
+	font-size: 12px;
+	height: 30px;
+	line-height: 31px;
+	padding: 5px 10px;
+	background: #ffffff;
+	border: 0px;
+	position: relative;
+	overflow: inherit
+}
+
+.aui_outer2 .aui_titleBar .aui_title,
+.aui_outer1 .aui_titleBar .aui_title,
+.aui_outer3 .aui_titleBar .aui_title {
+	text-shadow: -1px -1px 0 rgba(86, 86, 86, 0.2);
+	color: #ffffff;
+	display: none !important
+}
+
+.aui_outer2 .aui_main .aui_content,
+.aui_outer1 .aui_main .aui_content,
+.aui_outer3 .aui_main .aui_content {
+	color: #333333;
+	background: #ffffff;
+	font-size: 14px;
+	text-align: center
+}
+
+.aui_outer2 .aui_footer,
+.aui_outer1 .aui_footer,
+.aui_outer3 .aui_footer {
+	border-top: 0px;
+	background: #ffffff
+}
+
+.aui_outer2 .aui_buttons,
+.aui_outer1 .aui_buttons,
+.aui_outer3 .aui_buttons {
+	border-top: 0px
+}
+
+.aui_outer2 .aui_buttons button,
+.aui_outer1 .aui_buttons button,
+.aui_outer3 .aui_buttons button {
+	float: none;
+	height: 26px;
+	margin: 0px;
+	width: 100px;
+	border-radius: 26px;
+	margin: 0 auto
+}
+
+.aui_outer2 .aui_buttons button:last-child,
+.aui_outer1 .aui_buttons button:last-child,
+.aui_outer3 .aui_buttons button:last-child {
+	display: block;
+color:#ffffff;
+}
+
+.aui_outer2 .aui_titleBar .aui_close,
+.aui_outer1 .aui_titleBar .aui_close,
+.aui_outer3 .aui_titleBar .aui_close {
+	display: block;
+	font-family: arial;
+	font-weight: 100;
+	font-size: 22px;
+	line-height: 30px;
+	color: #ffffff;
+	position: absolute;
+	right: -10px;
+	top: -10px;
+	background: #595c61;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px
+}
+
+.aui_outer2 .aui_titleBar .aui_close:hover,
+.aui_outer1 .aui_titleBar .aui_close:hover,
+.aui_outer3 .aui_titleBar .aui_close:hover {
+	color: #dfdfdf;
+	text-decoration: none
+}
+
+.aui_outer1 .aui_buttons button {
+	background: #36acc9
+}
+
+.aui_outer3 .aui_buttons button {
+	background: #23ae91
+}
+
+.aui_content {
+	height: 100%
+}
+
+#loadingframe {
+	background: url("../images/loading.gif") no-repeat
+}
+
+.Ck-openon {
+	transition: left 700ms;
+	-webkit-transition: left 500ms;
+	-ms-transition: left 500ms;
+	-moz-transition: left 500ms;
+	-o-transition: left 500ms
+}
+
+.Ck-openon .aui_buttons button {
+	padding: 0 30px !important
+}
+
+.container .container-c{
+	min-height:580px;
+}
+.content .sjl-detail .field-list .field ul li.add-submit a.not-submit{
+	background:#999999;
+}
+.containerbox{
+	position: relative;
+}
+.kafka_input{
+	width: 600px;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 30px;
+    position: relative;
+    top: 11px;
+    border: 1px solid #dfdfdf;
+    padding:0 5px;
+    font-size:14px;
+    display: inline-block;
+    position: relative;
+    top: 0px;
+}
+.not-submit{
+	color:#999999 !important;
+}
+.restful_test{
+
+}
+.restful_test .ajax_demo{
+	padding:15px;
+	background:#f5f5f5;
+	font-size:12px;
+	color:#666666;
+	line-height: 20px
+
+}
+.restful_test .ajax_demo h2{
+	font-size:14px;
+	text-indent: left;
+	color:#333333;
+	font-weight:normal;
+	margin:10px 0;
+}
+.restful_test .ajax_demo p{
+	text-indent: 30px;
+}

@@ -1,0 +1,39 @@
+ .select-xt{
+                    display: inline-block;
+                    width: 95%;
+                    height: 30px;
+                    font-size: 14px;
+                    border-radius: 3px;
+                    padding-left: 5px;
+                    line-height: 26px;
+                    border: 1px solid #d0d0d0;
+                    background: #ffffff;
+                    position: relative;
+                    &:before{
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        right: 8px;
+                        top: 10px;
+                        border-left: 4px solid transparent;
+                        border-right: 4px solid transparent;
+                        border-top: 6px solid #cccccc;
+                        z-index: 3;
+                    }
+                    .select-bg{
+                        position: absolute;
+                        z-index: 1;
+                         width: 100%;
+                        height: 100%;
+                    }
+                    select{
+                        position: absolute;
+                        z-index: 2;
+                        opacity: 0;
+                        width: 100%;
+                        height: 100%;
+                        left: 0;
+                        top: 0;
+                    }
+                    
+                }//select end

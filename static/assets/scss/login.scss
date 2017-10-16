@@ -1,0 +1,65 @@
+@import "./public/base";
+@import "./include/header";
+.content{
+	.login{
+		position:fixed;
+		left:0px;
+		top:0px;
+		width:100%;
+		height:100%;
+		z-index:2;
+		.loginbox{
+			position:absolute;
+			left:0px;
+			top:0px;
+			right:0px;
+			bottom:0px;
+			margin:auto;
+			width:487px;
+			height:295px;
+			background:#ffffff;
+			border:1px solid #428bca;
+			.logo{
+				width: 366px;
+				height:24px;
+				margin: 0 auto;
+				position:relative;
+				top:-24px;
+			}
+			.login_form{
+				margin-top:50px;
+				padding:0 70px;
+				.lf-line{
+					margin-top:20px;
+					position:relative;
+					overflow:hidden;
+					font-size:14px;
+					.input{
+						width: 100%;
+						border:0px;
+						background:#ffffff;
+						box-sizing:border-box;
+						border-bottom:1px solid #dfdfdf;
+						padding:12px 5px;
+						padding-left:60px;
+					}
+					.tips{
+						position:absolute;
+						left:0px;
+						color:#666666;
+						top:10px;
+					}
+					.button{
+						width:132px;
+						height:38px;
+						background:url(../images/login-tn.jpg) no-repeat center;
+						color:#ffffff;
+						float:right;
+						margin-top:20px;
+						cursor:pointer;
+					}
+				}
+			}
+		}
+	}//login end
+}
